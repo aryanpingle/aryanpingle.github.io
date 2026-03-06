@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Article from "./components/Article.vue";
-import IMG from "~/assets/beer.png";
 import throttle from "throttleit";
 import Divider from "./components/Divider.vue";
 import Masthead from "./components/Masthead.vue";
