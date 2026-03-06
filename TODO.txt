@@ -1,0 +1,15 @@
+###################################
+##         FIRST RELEASE         ##
+###################################
+
+[ ] Oneline text recalculation on page load
+[ ] Finish up homepage articles
+[ ] Create grid for desktop & mobile
+[ ] Setup deployment pipeline
+
+###################################
+##         SECOND RELEASE        ##
+###################################
+
+[ ] Add blog pages
+[ ] Polish grid for desktop / tablet / mobile
