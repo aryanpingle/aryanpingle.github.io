@@ -63,7 +63,7 @@ const imgStyle = reactive<CSSProperties>({
 
       <a v-if="$props.link" class="frontpage_article-link" :href="link">
         <svg
-          class="promo_svg"
+          class="frontpage_article-svg"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
           style="pointer-events: none; user-select: none"
@@ -76,7 +76,12 @@ const imgStyle = reactive<CSSProperties>({
             opacity="0.65"
           />
           <!-- Background -->
-          <path :d="innerSvgPathD" fill="currentColor" opacity="0.25" />
+          <path
+            class="frontpage_article-svg-background"
+            :d="innerSvgPathD"
+            fill="currentColor"
+            opacity="0.25"
+          />
         </svg>
         {{ $props.linkText }}
       </a>
@@ -126,15 +131,19 @@ const imgStyle = reactive<CSSProperties>({
   text-transform: uppercase;
 }
 
-.frontpage_article-link:hover {
-  color: inherit;
-}
-
-.promo_svg {
+.frontpage_article-svg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.frontpage_article-svg-background {
+  transition: all 250ms ease;
+}
+
+.frontpage_article-link:hover .frontpage_article-svg-background {
+  opacity: 0.15;
 }
 </style>
