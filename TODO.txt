@@ -2,10 +2,10 @@
 ##         FIRST RELEASE         ##
 ###################################
 
-[ ] Oneline text recalculation on page load
 [ ] Finish up homepage articles
 [ ] Create grid for desktop & mobile
 [ ] Setup deployment pipeline
+[X] Oneline text recalculation on page load
 
 ###################################
 ##         SECOND RELEASE        ##

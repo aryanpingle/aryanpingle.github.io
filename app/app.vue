@@ -1,15 +1,7 @@
 <script setup lang="ts">
-import throttle from "throttleit";
 import Divider from "./components/Divider.vue";
 import Masthead from "./components/Masthead.vue";
 import Frontpage from "./components/Frontpage.vue";
-
-onMounted(() => {
-  window.addEventListener("load", adjustOnelineComponents);
-  window.addEventListener("resize", throttle(adjustOnelineComponents, 100));
-});
-
-// TODO: Remove on unmount?
 </script>
 
 <template>

@@ -23,27 +23,21 @@ export function resizeToFitOneLine(
 
   const textElementStyle = getComputedStyle(textElement);
 
-  const initialFontSizeString = textElementStyle.fontSize;
-  const initialFontSize = parseInt(
-    initialFontSizeString.substring(0, initialFontSizeString.length - 2),
+  const currentFontSizeString = textElementStyle.fontSize;
+  const currentFontSize = parseInt(
+    currentFontSizeString.substring(0, currentFontSizeString.length - 2),
   );
-  const initialWidth = textElement.scrollWidth;
+  const currentWidth = textElement.scrollWidth;
   const targetWidth =
     containerElement.offsetWidth * actualOptions.widthMultiplier;
-  console.log({
-    initialFontSizeString,
-    initialFontSize,
-    initialWidth,
-    targetWidth,
-  });
 
   const targetFontSize = Math.min(
-    targetWidth * (initialFontSize / initialWidth),
+    targetWidth * (currentFontSize / currentWidth),
     actualOptions.maxFontSizePx,
   );
-  console.log(
-    `${targetWidth} * (${initialFontSize} / ${initialWidth}) = ${targetFontSize}`,
-  );
+
+  if (targetFontSize > currentFontSize && targetFontSize <= currentFontSize + 1)
+    return;
   textElement.style.fontSize = `${targetFontSize}px`;
 }
 

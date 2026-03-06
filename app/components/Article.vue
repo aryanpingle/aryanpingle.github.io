@@ -34,9 +34,6 @@ const innerSvgPathD = getSaloonOutlinePath2({
   paddingY: PY,
 });
 
-console.log("outer", outerSvgPathD);
-console.log("inner", innerSvgPathD);
-
 const imgStyle = reactive<CSSProperties>({
   maxWidth: "100%",
   maskImage: `url(${MASK_IMAGE})`,
