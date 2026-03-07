@@ -1,46 +1,5 @@
 import { encodeSVGPath, SVGPathData } from "svg-pathdata";
 
-export type ResizeToFitOneLineOptions = {
-  maxFontSizePx?: number;
-  widthMultiplier?: number;
-};
-
-export function resizeToFitOneLine(
-  textElement: HTMLElement | null,
-  containerElement: HTMLElement | null,
-  options?: ResizeToFitOneLineOptions,
-) {
-  if (!textElement || !containerElement) return;
-
-  // Set default values of options
-  const actualOptions = Object.assign(
-    {
-      maxFontSizePx: 160,
-      widthMultiplier: 0.95,
-    },
-    options,
-  );
-
-  const textElementStyle = getComputedStyle(textElement);
-
-  const currentFontSizeString = textElementStyle.fontSize;
-  const currentFontSize = parseInt(
-    currentFontSizeString.substring(0, currentFontSizeString.length - 2),
-  );
-  const currentWidth = textElement.scrollWidth;
-  const targetWidth =
-    containerElement.offsetWidth * actualOptions.widthMultiplier;
-
-  const targetFontSize = Math.min(
-    targetWidth * (currentFontSize / currentWidth),
-    actualOptions.maxFontSizePx,
-  );
-
-  if (targetFontSize > currentFontSize && targetFontSize <= currentFontSize + 1)
-    return;
-  textElement.style.fontSize = `${targetFontSize}px`;
-}
-
 export function getSaloonOutlinePath(
   width: number,
   height: number,

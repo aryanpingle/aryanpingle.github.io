@@ -1,25 +1,22 @@
 <script setup lang="ts">
 import Divider from "./Divider.vue";
-import OneLine from "./OneLine.vue";
+import MASTHEAD_IMAGE from "~/assets/masthead.png";
 </script>
 
 <template>
   <div class="masthead">
-    <Divider style="margin: 0.2rem 0; border-width: 0.11rem" />
+    <Divider style="margin: 0.2rem 0" border-width="0.075rem" />
     <Divider
       style="margin: 0.2rem 0; border-width: 0.075rem"
       border-style="dashed"
     />
-    <OneLine
-      text="The Daily Pingle"
-      fontFamily="Old London, serif"
-      fontSize="10rem"
-    />
+    <div style="width: 100%; display: flex; justify-content: center">
+      <img :src="MASTHEAD_IMAGE" style="width: 100%; max-width: 1024px" />
+    </div>
     <Divider
-      style="margin: 0.2rem 0; border-width: 0.075rem"
-      border-style="dashed"
+      style="margin: 0.2rem 0; border-width: 0.075rem; border-style: dashed"
     />
-    <Divider style="margin: 0.2rem 0; border-width: 0.11rem" />
+    <Divider style="margin: 0.2rem 0" border-width="0.075rem" />
   </div>
 </template>
 
