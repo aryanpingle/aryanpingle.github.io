@@ -2,6 +2,10 @@
 import Divider from "./components/Divider.vue";
 import Masthead from "./components/Masthead.vue";
 import Frontpage from "./components/Frontpage.vue";
+
+useSeoMeta({
+  title: "Aryan Pingle",
+});
 </script>
 
 <template>
