@@ -28,11 +28,7 @@ onUnmounted(() => {
 
 <template>
   <div style="display: flex">
-    <div
-      v-if="columnwiseData['1']?.length"
-      class="frontpage_column"
-      style="flex: 1; display: flex; flex-direction: column"
-    >
+    <div v-if="columnwiseData['1']?.length" class="frontpage_column">
       <ArticleRenderer
         v-for="value in columnwiseData['1']"
         :article-id="value"

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getSaloonOutlinePath2 } from "@/utils";
+import { getSaloonOutlinePath } from "@/utils";
 import type { CSSProperties } from "vue";
 import MASK_IMAGE from "~/assets/mask.png";
 
@@ -19,13 +19,13 @@ const paras = (text ?? "").trim().split(/\n+/g);
 const RY = 20;
 const PY = 10;
 const ASPECT_RATIO = 5;
-const outerSvgPathD = getSaloonOutlinePath2({
+const outerSvgPathD = getSaloonOutlinePath({
   width: 100,
   height: 100,
   radiusX: RY / ASPECT_RATIO,
   radiusY: RY,
 });
-const innerSvgPathD = getSaloonOutlinePath2({
+const innerSvgPathD = getSaloonOutlinePath({
   width: 100,
   height: 100,
   radiusX: RY / ASPECT_RATIO,
