@@ -1,5 +1,8 @@
 import { encodeSVGPath, SVGPathData } from "svg-pathdata";
 
+export const SMALL_DEVICE_BREAKPOINT = 720;
+export const MEDIUM_DEVICE_BREAKPOINT = 1200;
+
 export function getSaloonOutlinePath({
   width,
   height,

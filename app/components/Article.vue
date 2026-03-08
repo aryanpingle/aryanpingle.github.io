@@ -45,44 +45,46 @@ const imgStyle = reactive<CSSProperties>({
 </script>
 
 <template>
-  <div>
-    <div class="frontpage-article">
-      <h1 v-if="$props.title" style="text-align: center">{{ $props.title }}</h1>
-      <div
-        v-if="$props.byline"
-        style="text-align: center; font-style: italic; margin-bottom: 1rem"
-      >
-        {{ $props.byline }}
-      </div>
-      <img :src="$props.imageSrc" :style="imgStyle" alt="" />
-
-      <p v-for="para in paras" style="text-align: justify">{{ para }}</p>
-
-      <a v-if="$props.link" class="frontpage_article-link" :href="link">
-        <svg
-          class="frontpage_article-svg"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          style="pointer-events: none; user-select: none"
-        >
-          <!-- Outline -->
-          <path
-            :d="`${outerSvgPathD} ${innerSvgPathD}`"
-            fill="black"
-            fill-rule="evenodd"
-            opacity="0.65"
-          />
-          <!-- Background -->
-          <path
-            class="frontpage_article-svg-background"
-            :d="innerSvgPathD"
-            fill="currentColor"
-            opacity="0.25"
-          />
-        </svg>
-        {{ $props.linkText }}
-      </a>
+  <div class="frontpage-article">
+    <h1 v-if="$props.title" style="text-align: center">{{ $props.title }}</h1>
+    <div
+      v-if="$props.byline"
+      style="text-align: center; font-style: italic; margin-bottom: 1rem"
+    >
+      {{ $props.byline }}
     </div>
+    <img :src="$props.imageSrc" :style="imgStyle" alt="" />
+
+    <template v-for="para in paras">
+      <p v-if="para" style="text-align: justify">
+        {{ para }}
+      </p>
+    </template>
+
+    <a v-if="$props.link" class="frontpage_article-link" :href="link">
+      <svg
+        class="frontpage_article-svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        style="pointer-events: none; user-select: none"
+      >
+        <!-- Outline -->
+        <path
+          :d="`${outerSvgPathD} ${innerSvgPathD}`"
+          fill="black"
+          fill-rule="evenodd"
+          opacity="0.65"
+        />
+        <!-- Background -->
+        <path
+          class="frontpage_article-svg-background"
+          :d="innerSvgPathD"
+          fill="currentColor"
+          opacity="0.25"
+        />
+      </svg>
+      {{ $props.linkText }}
+    </a>
   </div>
 </template>
 
@@ -91,7 +93,12 @@ const imgStyle = reactive<CSSProperties>({
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.columns-2 .frontpage-article,
+.columns-3 .frontpage-article {
+  padding: 0.5rem 1rem;
 }
 
 .frontpage-article p:first-of-type:first-letter {

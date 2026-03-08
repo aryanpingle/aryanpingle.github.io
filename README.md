@@ -12,4 +12,5 @@ But tbh I should go straight for vanilla. Let's see.
 
 ## References
 
+- [Google Fonts](https://fonts.google.com)
 - [Fleurons](https://www.streamlinehq.com/elements/ornaments-side?icon=ico_04amYvcqC2F7huCJ)
