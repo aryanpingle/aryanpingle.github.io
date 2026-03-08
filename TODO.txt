@@ -2,8 +2,10 @@
 ##         FIRST RELEASE         ##
 ###################################
 
+[ ] Contact byline / article
+[ ] SEO
 [ ] Finish up homepage articles
-[ ] Create grid for desktop & mobile
+[X] Create grid for desktop & mobile
 [X] Setup deployment pipeline
 [X] Oneline text recalculation on page load
 
