@@ -25,7 +25,7 @@ export const ARTICLES: Breakpoints = {
   // Desktop
   lg: {
     "1": ["island", "drinker"],
-    "2": ["hero", "xkcd"],
-    "3": ["eternal"],
+    "2": ["hero"],
+    "3": ["eternal", "xkcd"],
   },
 };
