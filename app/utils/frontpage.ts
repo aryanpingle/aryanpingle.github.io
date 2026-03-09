@@ -15,12 +15,12 @@ export type Breakpoints = {
 export const ARTICLES: Breakpoints = {
   // Mobile
   sm: {
-    "1": ["hero", "island"],
+    "1": ["hero", "island", "eternal", "drinker"],
   },
   // Tablet
   md: {
-    "1": [],
-    "2": [],
+    "1": ["island", "drinker"],
+    "2": ["hero", "eternal"],
   },
   // Desktop
   lg: {

@@ -53,7 +53,7 @@ const imgStyle = reactive<CSSProperties>({
     >
       {{ $props.byline }}
     </div>
-    <img :src="$props.imageSrc" :style="imgStyle" alt="" />
+    <img :src="$props.imageSrc" :style="imgStyle" loading="lazy" />
 
     <template v-for="para in paras">
       <p v-if="para" style="text-align: justify">
@@ -121,8 +121,7 @@ const imgStyle = reactive<CSSProperties>({
   position: relative;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  margin-top: 1rem;
+  margin: 1rem auto;
   aspect-ratio: 5 / 1;
   font-size: 1.2rem;
   width: 100%;
