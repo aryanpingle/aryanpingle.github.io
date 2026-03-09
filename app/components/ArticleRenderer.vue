@@ -2,6 +2,7 @@
 import BEER_IMAGE from "~/assets/beer.png";
 import HERO_IMAGE from "~/assets/hero.png";
 import ISLAND_IMAGE from "~/assets/frontpage/island.png";
+import XKCD_IMAGE from "~/assets/frontpage/xkcd.png";
 
 const HERO_TEXT = `
 In all of jujutsu sorcerer history, there's never been anyone who has managed to subjugate this one. In this exclusive issue, with this sacred treasure, we summon 24 year old, Divergent Sila Divine General, Aryan Pingle.
@@ -44,6 +45,8 @@ defineProps<{ articleId: ArticleId }>();
     v-if="$props.articleId === 'island'"
     :image-src="ISLAND_IMAGE"
   ></Article>
+
+  <Article v-if="$props.articleId === 'xkcd'" :image-src="XKCD_IMAGE"></Article>
 </template>
 
 <style scoped></style>
