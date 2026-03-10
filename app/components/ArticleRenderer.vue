@@ -15,6 +15,10 @@ Gongs of the Buddhist monastery echo that all things are impermanent. Yet no one
 After a legendary 1 year run at Nugget — the up-and-coming customer support platform — senior executives at Eternal have decided to leverage Pingle's talents to the fullest at Temple — a health-oriented smart-wearable company. During his tenure at Nugget, he made a name for himself as a full-stack developer, contributing to the user interface as well as to the overall Zomato code infrastructure. It's no surprise that these qualities are sought after by an early stage startup infamous for an extremely rapid pace.
 `;
 
+const CONTACT_TEXT = `
+But you can get in touch with your daddy via Instagram: [@aryan.pingle](https://www.instagram.com/aryan.pingle/). If you're a nerd, you can find me on GitHub: [github/aryanpingle](https://github.com/aryanpingle/). If you're a dinosaur, you can e-mail me at [realaryanpingle@gmail.com](mailto://realaryanpingle@gmail.com). If you're a recruiter, I assure you that I don't mean any of the ridiculous stuff I've written. And you may connect with me on LinkedIn: [linkedin/aryan-pingle](https://www.linkedin.com/in/aryan-pingle/).
+`;
+
 defineProps<{ articleId: ArticleId }>();
 </script>
 
@@ -35,7 +39,7 @@ defineProps<{ articleId: ArticleId }>();
   <Article
     v-if="$props.articleId === 'eternal'"
     title="Zomato ordered to donate to Temple"
-    byline="Aoi Todo / Gurgaon, March 1, 2026"
+    byline="Aoi Todo / Gurgaon / March 1, 2026"
     :text="ZOMATO_TEXT"
     linkText="Read more"
     link="https://example.com"
@@ -47,6 +51,12 @@ defineProps<{ articleId: ArticleId }>();
   ></Article>
 
   <Article v-if="$props.articleId === 'xkcd'" :image-src="XKCD_IMAGE"></Article>
+
+  <Article
+    v-if="$props.articleId === 'contact'"
+    title="You're out of touch"
+    :text="CONTACT_TEXT"
+  ></Article>
 </template>
 
 <style scoped></style>

@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { getSaloonOutlinePath } from "@/utils";
-import type { CSSProperties } from "vue";
+import type { CSSProperties, Fragment } from "vue";
 import MASK_IMAGE from "~/assets/mask.png";
+import { parse } from "marked";
 
 const { link, text } = defineProps({
   title: {
@@ -55,10 +56,8 @@ const imgStyle = reactive<CSSProperties>({
     </div>
     <img :src="$props.imageSrc" :style="imgStyle" loading="lazy" />
 
-    <template v-for="para in paras">
-      <p v-if="para" style="text-align: justify">
-        {{ para }}
-      </p>
+    <template v-if="text">
+      <div class="article_body" v-html="parse(text)"></div>
     </template>
 
     <a v-if="$props.link" class="frontpage_article-link" :href="link">
@@ -88,6 +87,28 @@ const imgStyle = reactive<CSSProperties>({
   </div>
 </template>
 
+<!-- Dynamically generated article body -->
+<style>
+.article_body p:first-of-type:first-letter {
+  float: left;
+  margin-right: 0.25rem;
+  font-weight: bold;
+  font-size: 3lh;
+  line-height: 1;
+}
+
+.article_body p:not(:first-of-type) {
+  text-indent: 3rem;
+}
+
+.article_body a {
+  font-weight: 900;
+  color: currentColor;
+  text-decoration: underline;
+  background-color: orange;
+}
+</style>
+
 <style scoped>
 .frontpage-article {
   display: flex;
@@ -101,7 +122,7 @@ const imgStyle = reactive<CSSProperties>({
   padding: 0.5rem 1rem;
 }
 
-.frontpage-article p:first-of-type:first-letter {
+.article_body p:first-of-type:first-letter {
   float: left;
   margin-right: 0.25rem;
   font-weight: bold;
@@ -109,7 +130,7 @@ const imgStyle = reactive<CSSProperties>({
   line-height: 1;
 }
 
-.frontpage-article p:not(:first-of-type) {
+.article_body p:not(:first-of-type) {
   margin-top: 0;
   text-indent: 3rem;
 }
