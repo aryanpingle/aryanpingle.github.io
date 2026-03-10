@@ -105,7 +105,8 @@ const imgStyle = reactive<CSSProperties>({
   font-weight: 900;
   color: currentColor;
   text-decoration: underline;
-  background-color: orange;
+  background-color: hsl(39, 100%, 50%, 33%);
+  padding: 0 0.2rem;
 }
 </style>
 
