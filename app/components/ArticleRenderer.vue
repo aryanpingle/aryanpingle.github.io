@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import BEER_IMAGE from "~/assets/beer.png";
-import HERO_IMAGE from "~/assets/hero.png";
-import ISLAND_IMAGE from "~/assets/frontpage/island.png";
+// TODO: Figure out how to keep jpg/png and webp both for compat
+import BEER_IMAGE from "~/assets/frontpage/beer.webp";
+import HERO_IMAGE from "~/assets/frontpage/hero.webp";
+import ISLAND_IMAGE from "~/assets/frontpage/island.webp";
 import XKCD_IMAGE from "~/assets/frontpage/xkcd.png";
 
 const HERO_TEXT = `
