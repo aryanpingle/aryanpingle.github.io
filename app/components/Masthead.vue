@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Divider from "./Divider.vue";
-import MASTHEAD_IMAGE from "~/assets/masthead.png";
+import MASTHEAD_IMAGE from "~/assets/masthead.webp";
 </script>
 
 <template>

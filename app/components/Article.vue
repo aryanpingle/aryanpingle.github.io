@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { getSaloonOutlinePath } from "@/utils";
 import type { CSSProperties, Fragment } from "vue";
-import MASK_IMAGE from "~/assets/mask.png";
+import MASK_IMAGE from "~/assets/mask.webp";
 import { parse } from "marked";
 
 const { link, text } = defineProps({
