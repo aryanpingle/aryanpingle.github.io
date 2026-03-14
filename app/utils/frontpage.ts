@@ -4,7 +4,9 @@ export type ArticleId =
   | "eternal"
   | "island"
   | "xkcd"
-  | "contact";
+  | "contact"
+  | "website"
+  | "education";
 
 export type ColumnwiseArticles = {
   1?: ArticleId[];
@@ -21,17 +23,17 @@ export type Breakpoints = {
 export const ARTICLES: Breakpoints = {
   // Mobile
   sm: {
-    "1": ["hero", "island", "contact", "eternal", "drinker", "xkcd"],
+    "1": ["hero", "island", "contact", "eternal", "drinker", "website", "xkcd"],
   },
   // Tablet
   md: {
-    "1": ["island", "contact", "drinker", "xkcd"],
-    "2": ["hero", "eternal"],
+    "1": ["island", "contact", "drinker", "xkcd", "education"],
+    "2": ["hero", "eternal", "website"],
   },
   // Desktop
   lg: {
     "1": ["island", "drinker"],
-    "2": ["hero"],
+    "2": ["hero", "website"],
     "3": ["contact", "eternal", "xkcd"],
   },
 };
