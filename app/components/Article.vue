@@ -95,11 +95,21 @@ const imgStyle = reactive<CSSProperties>({
   float: left;
   margin-right: 0.25rem;
   font-weight: bold;
-  font-size: 3lh;
+  font-size: 2lh;
   line-height: 1;
 }
 
+.columns-2 .article_body p:first-of-type:first-letter,
+.columns-3 .article_body p:first-of-type:first-letter {
+  font-size: 3lh;
+}
+
 .article_body p:not(:first-of-type) {
+  text-indent: 2rem;
+}
+
+.columns-2 .article_body p:not(:first-of-type),
+.columns-3 .article_body p:not(:first-of-type) {
   text-indent: 3rem;
 }
 

@@ -14,13 +14,16 @@ After a legendary 1 year run at _Zomato_, senior executives at _Eternal_ have de
 `;
 
 const CONTACT_TEXT = `
-But you can get in touch with the newspaper representatives on Instagram by sending us cool reels: [@aryan.pingle](https://www.instagram.com/aryan.pingle/). Nerds can reach out to us on GitHub: [github/aryanpingle](https://github.com/aryanpingle/). If you're a dinosaur, you can e-mail us at [realaryanpingle@gmail.com](mailto://realaryanpingle@gmail.com). If you're a recruiter, we assure you that we here at _The Daily Pingle_ don't mean any of the ridiculous stuff we've written. And you may connect with us on LinkedIn: [linkedin/aryan-pingle](https://www.linkedin.com/in/aryan-pingle/).
+But you can get in touch with the newspaper representatives on Instagram by sending us cool reels: [@aryan.pingle](https://www.instagram.com/aryan.pingle/). Hot, tall brunettes can reach out to our editor-in-chief on GitHub: [github/aryanpingle](https://github.com/aryanpingle/). Middle-aged, balding men can feel free to e-mail us at [realaryanpingle@gmail.com](mailto://realaryanpingle@gmail.com). If you're a recruiter, we assure you that we here at _The Daily Pingle_ don't mean any of the ridiculous stuff we've written. And you may connect with us on LinkedIn: [linkedin/aryan-pingle](https://www.linkedin.com/in/aryan-pingle/).
 `;
 
 const WEBSITE_TEXT = `
-The digital experience of this prestigious newspaper was made with [Nuxt](https://nuxt.com/), which uses the [VueJS](https://vuejs.org/) framework. I had a blast making it, which was largely due to how fun it is to use this framework. I'll keep trying to optimize the shit outta this site, which might mean ditching frameworks entirely. But I won't forget you, Vue.
+A bold claim by our editor-in-chief. But is there any truth to this statement? A closer look at the state of the web reveals that most websites prefer to have generic user interfaces that emphasize comfort over uniqueness. Think of the thousand [shadcn-inspired](https://ui.shadcn.com/) black and white _clean_ pages you have seen. A more appropriate adjective would be _sterilized_. Think of the brand logos that have been neutered in the recent past in the name of _minimalism_.
 
-Absolutely no AI was used for any part of this newspaper — it simply cannot measure up to my extremely high standards.`;
+But what is art, if not an expression to comfort the disturbed and disturb the comfortable? There's no sex appeal to something that's mass-produced — this holds as true for websites as it does for everything in nature. By definition, it's not sexy.
+
+We here at _The Daily Pingle_... we're bringing sexy back.
+`;
 
 defineProps<{ articleId: ArticleId }>();
 </script>
@@ -61,8 +64,8 @@ defineProps<{ articleId: ArticleId }>();
 
   <Article
     v-if="$props.articleId === 'website'"
-    title="Vue from the top"
-    byline="Aryan Pingle / Shibuya / March 14, 2001"
+    title="&quot;Websites aren't sexy anymore&quot;"
+    byline="Jogoat / Shibuya / March 14, 2026"
     :text="WEBSITE_TEXT"
   ></Article>
 </template>
