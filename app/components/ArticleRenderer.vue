@@ -5,14 +5,12 @@ import ISLAND_IMAGE from "~/assets/frontpage/island.png";
 import XKCD_IMAGE from "~/assets/frontpage/xkcd.png";
 
 const HERO_TEXT = `
-In all of jujutsu sorcerer history, there's never been anyone who has managed to subjugate this one. In this exclusive issue, with this sacred treasure, we summon 24 year old, Divergent Sila Divine General, Aryan Pingle.
+Gongs of the Gion Shoja bells echo the impermanence of all things. The color of the sala flowers reveals the truth that the prosperous must decline. But he is the exception - in this exclusive issue, we explore the psyche of 24 year old Aryan Pingle.
 
-While others coward behind platitudes of fake humility, he boldly proclaims himself to be a 'Web Developer Extraordinaire'. But don't be fooled by the sheer magnificence of his aptitude in Front-End Web Development, for his peers deem him a master of adaptability; he can make container management scripts as skillfully as he can prototype in Figma. This charismatic prodigy is the single greatest asset to the fields of Compiler Construction, Meta-programming, and Engineering in general (with the sole exception of Terry Davis, of course).`;
+While others coward behind platitudes of fake humility, he boldly proclaims himself to be a 'Web Developer Extraordinaire'. But don't be fooled by the sheer magnificence of his aptitude in making stunning websites, for his peers deem him a master of adaptability; he makes container management scripts as skillfully as he prototypes in Figma. A "Jack of all trades" in the truest sense. This charismatic prodigy is the single greatest asset to the fields of Compiler Construction, Meta-programming, and Engineering in general. With the sole exception of Terry Davis, of course.`;
 
 const ZOMATO_TEXT = `
-Gongs of the Buddhist monastery echo that all things are impermanent. Yet no one could have foreseen the executive order to promote Zomato rockstar Aryan Pingle to sister corporation, "Temple".
-
-After a legendary 1 year run at Nugget — the up-and-coming customer support platform — senior executives at Eternal have decided to leverage Pingle's talents to the fullest at Temple — a health-oriented smart-wearable company. During his tenure at Nugget, he made a name for himself as a full-stack developer, contributing to the user interface as well as to the overall Zomato code infrastructure. It's no surprise that these qualities are sought after by an early stage startup infamous for an extremely rapid pace.
+After a legendary 1 year run at _Zomato_, senior executives at _Eternal_ have decided to leverage Pingle's talents to the fullest at _Temple_ — a health-oriented smart-wearable company. During his tenure at Zomato, he made a name for himself as a full-stack developer, contributing to the user interface as well as to the overall code infrastructure. It's no surprise that these qualities are sought after by an early stage startup infamous for an extremely rapid pace. Sources close to him claim, "If he was content with all we could offer him, then he would have ceased to be my best friend" and "Maybe the real engineering was the friends we made along the way".
 `;
 
 const CONTACT_TEXT = `
@@ -41,8 +39,6 @@ defineProps<{ articleId: ArticleId }>();
     title="Zomato ordered to donate to Temple"
     byline="Aoi Todo / Gurgaon / March 1, 2026"
     :text="ZOMATO_TEXT"
-    linkText="Read more"
-    link="https://example.com"
   ></Article>
 
   <Article

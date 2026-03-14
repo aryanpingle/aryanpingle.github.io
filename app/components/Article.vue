@@ -15,8 +15,6 @@ const { link, text } = defineProps({
   linkText: { type: String },
 });
 
-const paras = (text ?? "").trim().split(/\n+/g);
-
 const RY = 20;
 const PY = 10;
 const ASPECT_RATIO = 5;
@@ -89,6 +87,10 @@ const imgStyle = reactive<CSSProperties>({
 
 <!-- Dynamically generated article body -->
 <style>
+.article_body > p {
+  text-align: justify;
+}
+
 .article_body p:first-of-type:first-letter {
   float: left;
   margin-right: 0.25rem;
@@ -121,19 +123,6 @@ const imgStyle = reactive<CSSProperties>({
 .columns-2 .frontpage-article,
 .columns-3 .frontpage-article {
   padding: 0.5rem 1rem;
-}
-
-.article_body p:first-of-type:first-letter {
-  float: left;
-  margin-right: 0.25rem;
-  font-weight: bold;
-  font-size: 3lh;
-  line-height: 1;
-}
-
-.article_body p:not(:first-of-type) {
-  margin-top: 0;
-  text-indent: 3rem;
 }
 
 /* Link */
