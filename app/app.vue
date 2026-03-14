@@ -16,8 +16,6 @@ useSeoMeta({
 </template>
 
 <style>
-/* Masthead */
-@import url("https://fonts.googleapis.com/css2?family=Metamorphous&display=swap");
 /* Titles */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 /* Text */
@@ -91,7 +89,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Metamorphous", serif;
   font-family: "Playfair Display", serif;
   font-weight: 700;
   text-transform: uppercase;
