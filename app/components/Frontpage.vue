@@ -5,11 +5,6 @@ import Divider from "./Divider.vue";
 
 const columnwiseData = ref<ColumnwiseArticles>(ARTICLES["sm"]);
 
-const columnCountClassName = computed(() => {
-  const numCols = Object.keys(columnwiseData.value).length;
-  return `columns-${numCols}`;
-});
-
 const recalculate = () => {
   if (window.innerWidth <= SMALL_DEVICE_BREAKPOINT)
     columnwiseData.value = ARTICLES["sm"];
@@ -32,7 +27,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div style="display: flex" :class="columnCountClassName">
+  <div style="display: flex">
     <div v-if="columnwiseData['1']?.length" class="frontpage_column">
       <template v-for="(value, index) in columnwiseData['1']">
         <ArticleRenderer :article-id="value" />

@@ -2,9 +2,33 @@
 import Divider from "./components/Divider.vue";
 import Masthead from "./components/Masthead.vue";
 import Frontpage from "./components/Frontpage.vue";
+import throttle from "throttleit";
 
 useSeoMeta({
   title: "Aryan Pingle",
+});
+
+const applyDeviceBreakpointClass = () => {
+  if (window.innerWidth <= SMALL_DEVICE_BREAKPOINT)
+    document.body.className = "device-sm";
+  else if (window.innerWidth <= MEDIUM_DEVICE_BREAKPOINT)
+    document.body.className = "device-md";
+  else document.body.className = "device-lg";
+};
+
+const throttled_applyDeviceBreakpointClass = throttle(
+  applyDeviceBreakpointClass,
+  100,
+);
+
+// Apply device breakpoint class once + every time window is resized
+onMounted(() => {
+  applyDeviceBreakpointClass();
+  window.addEventListener("resize", throttled_applyDeviceBreakpointClass);
+});
+// Remove event listeners
+onUnmounted(() => {
+  window.removeEventListener("resize", throttled_applyDeviceBreakpointClass);
 });
 </script>
 

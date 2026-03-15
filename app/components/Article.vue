@@ -87,6 +87,10 @@ const imgStyle = reactive<CSSProperties>({
 
 <!-- Dynamically generated article body -->
 <style>
+.device-sm .article_body {
+  font-size: 0.9rem;
+}
+
 .article_body > p {
   text-align: justify;
 }
@@ -99,8 +103,8 @@ const imgStyle = reactive<CSSProperties>({
   line-height: 1;
 }
 
-.columns-2 .article_body p:first-of-type:first-letter,
-.columns-3 .article_body p:first-of-type:first-letter {
+.device-md .article_body p:first-of-type:first-letter,
+.device-lg .article_body p:first-of-type:first-letter {
   font-size: 3lh;
 }
 
@@ -108,8 +112,8 @@ const imgStyle = reactive<CSSProperties>({
   text-indent: 2rem;
 }
 
-.columns-2 .article_body p:not(:first-of-type),
-.columns-3 .article_body p:not(:first-of-type) {
+.device-md .article_body p:not(:first-of-type),
+.device-lg .article_body p:not(:first-of-type) {
   text-indent: 3rem;
 }
 
@@ -130,8 +134,8 @@ const imgStyle = reactive<CSSProperties>({
   padding: 0.5rem 0;
 }
 
-.columns-2 .frontpage-article,
-.columns-3 .frontpage-article {
+.device-md .frontpage-article,
+.device-lg .frontpage-article {
   padding: 0.5rem 1rem;
 }
 
