@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import Divider from "./Divider.vue";
 import MASTHEAD_IMAGE from "~/assets/masthead.webp";
+
+const route = useRoute();
 </script>
 
 <template>
@@ -10,9 +12,19 @@ import MASTHEAD_IMAGE from "~/assets/masthead.webp";
       style="margin: 0.2rem 0; border-width: 0.075rem"
       border-style="dashed"
     />
-    <div style="width: 100%; display: flex; justify-content: center">
+
+    <a
+      v-if="route.path !== '/'"
+      href="/"
+      style="width: 100%; display: flex; justify-content: center"
+    >
+      <img :src="MASTHEAD_IMAGE" style="width: 100%; max-width: 1024px" />
+    </a>
+    <div v-else style="width: 100%; display: flex; justify-content: center">
       <img :src="MASTHEAD_IMAGE" style="width: 100%; max-width: 1024px" />
     </div>
+
+    <div></div>
     <Divider
       style="margin: 0.2rem 0; border-width: 0.075rem; border-style: dashed"
     />

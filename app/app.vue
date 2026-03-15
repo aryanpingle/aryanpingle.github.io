@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import Divider from "./components/Divider.vue";
-import Masthead from "./components/Masthead.vue";
-import Frontpage from "./components/Frontpage.vue";
 import throttle from "throttleit";
 
 useSeoMeta({
@@ -33,9 +30,8 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <NuxtRouteAnnouncer />
   <Masthead />
-  <Frontpage />
+  <NuxtPage />
   <Divider style="margin: 0.2rem 0; margin-top: 0; border-width: 0.075rem" />
 </template>
 
@@ -118,7 +114,6 @@ h6 {
   text-transform: uppercase;
   text-wrap: balance;
   line-height: 1;
-  margin: 0.5rem 0;
 }
 
 p {
@@ -126,21 +121,14 @@ p {
 }
 
 h1 {
-  font-size: 2rem;
+  text-align: center;
   line-height: 1.1;
   margin: 2rem 0;
-  margin-top: 1rem;
 }
 
 @media (min-width: 720px) {
   h1 {
     font-size: 3.2rem;
   }
-}
-
-@font-face {
-  font-family: "Old London";
-  src: url(assets/OldLondon.ttf);
-  display: swap;
 }
 </style>

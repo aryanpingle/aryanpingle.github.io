@@ -124,6 +124,10 @@ const imgStyle = reactive<CSSProperties>({
   background-color: hsl(39, 100%, 50%, 33%);
   padding: 0 0.2rem;
 }
+
+.article_body h1 {
+  text-align: center;
+}
 </style>
 
 <style scoped>
