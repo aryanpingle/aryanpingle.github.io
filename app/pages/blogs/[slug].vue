@@ -16,12 +16,6 @@ const { data: post } = await useAsyncData(`blog-${slug}`, () =>
 .article_body2 {
   max-width: 70ch;
   margin: auto;
-  line-height: 1.5;
-}
-
-.article_body2 > p {
-  /* text-align: justify; */
-  /* margin: 1.3rem 0; */
 }
 
 .article_body2 > p:first-of-type:first-letter {

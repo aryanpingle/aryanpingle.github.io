@@ -53,7 +53,6 @@ onUnmounted(() => {
   font-family: "Merriweather", serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.1;
 
   color-scheme: light dark;
   color: hsl(35, 50%, 13%);
@@ -105,9 +104,6 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -123,6 +119,7 @@ h6 {
   font-weight: 700;
   text-transform: uppercase;
   text-wrap: balance;
+  line-height: 1;
 }
 
 p {
@@ -157,7 +154,6 @@ h1 {
 }
 
 h2 {
-  font-family: "Merriweather", serif;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
