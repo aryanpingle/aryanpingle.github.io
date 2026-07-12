@@ -6,7 +6,8 @@ export type ArticleId =
   | "xkcd"
   | "contact"
   | "website"
-  | "blogs";
+  | "blogs"
+  | "projects";
 
 export type ColumnwiseArticles = {
   1?: ArticleId[];
@@ -30,6 +31,7 @@ export const ARTICLES: Breakpoints = {
       "drinker",
       "eternal",
       "contact",
+      "projects",
       "website",
       "xkcd",
     ],
@@ -41,7 +43,7 @@ export const ARTICLES: Breakpoints = {
   },
   // Desktop
   lg: {
-    "1": ["island", "drinker", "contact"],
+    "1": ["island", "drinker", "contact", "projects"],
     "2": ["hero", "website"],
     "3": ["blogs", "eternal", "xkcd"],
   },

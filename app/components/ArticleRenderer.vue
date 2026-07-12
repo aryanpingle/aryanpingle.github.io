@@ -35,6 +35,12 @@ That one scene from _The Social Network_ where Mark is downing a beer and writin
 If you were to replace the beer with Soju, you'd find an accurate depiction of how it felt to write these blogs.
 `;
 
+const PROJECT_TEXT = `
+For all of his wit and bravado, Pingle refrained from joking when it came to his projects. In a rare moment of vulnerability, he admitted his projects have been his pride and joy for as long as he's known to program. His side-quests are in his words, "The story of how I learnt to walk. Not in the physical sense... but in an adolescence to adulthood sort of way...".
+
+The way he recounted these, you'd think it was more than a hobby for him. Perhaps journeys he fondly remembers embarking on.
+`;
+
 defineProps<{ articleId: ArticleId }>();
 </script>
 
@@ -85,6 +91,14 @@ defineProps<{ articleId: ArticleId }>();
     :text="BLOG_TEXT"
     link="/blogs"
     link-text="View Blogs"
+  ></Article>
+
+  <Article
+    v-if="$props.articleId === 'projects'"
+    title="Recreational use"
+    :text="PROJECT_TEXT"
+    link="/projects"
+    link-text="View Projects"
   ></Article>
 </template>
 
