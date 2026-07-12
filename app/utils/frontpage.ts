@@ -7,7 +7,8 @@ export type ArticleId =
   | "contact"
   | "website"
   | "blogs"
-  | "projects";
+  | "projects"
+  | "table-tennis";
 
 export type ColumnwiseArticles = {
   1?: ArticleId[];
@@ -32,6 +33,7 @@ export const ARTICLES: Breakpoints = {
       "eternal",
       "contact",
       "projects",
+      "table-tennis",
       "website",
       "xkcd",
     ],
@@ -39,12 +41,12 @@ export const ARTICLES: Breakpoints = {
   // Tablet
   md: {
     "1": ["island", "blogs", "drinker", "contact", "xkcd"],
-    "2": ["hero", "eternal", "website"],
+    "2": ["hero", "eternal", "website", "table-tennis"],
   },
   // Desktop
   lg: {
-    "1": ["island", "drinker", "contact", "projects"],
-    "2": ["hero", "website"],
-    "3": ["blogs", "eternal", "xkcd"],
+    "1": ["island", "eternal", "table-tennis", "projects"],
+    "2": ["hero", "website", "contact"],
+    "3": ["blogs", "drinker", "xkcd"],
   },
 };

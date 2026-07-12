@@ -3,6 +3,7 @@ import BEER_IMAGE from "~/assets/frontpage/beer.jpg";
 import HERO_IMAGE from "~/assets/frontpage/hero.jpg";
 import ISLAND_IMAGE from "~/assets/frontpage/island.jpg";
 import XKCD_IMAGE from "~/assets/frontpage/xkcd.png";
+import TABLE_TENNIS_IMAGE from "~/assets/frontpage/table-tennis.png";
 
 const HERO_TEXT = `
 Gongs of the _Gion Shoja_ bells echo the impermanence of all things. The color of the sala flowers reveals the truth that the prosperous must decline. But he is the exception — in this exclusive issue of The Daily Pingle, we explore the psyche of our editor-in-chief, 24 year old Aryan Pingle.
@@ -100,6 +101,9 @@ defineProps<{ articleId: ArticleId }>();
     link="/projects"
     link-text="View Projects"
   ></Article>
-</template>
 
-<style scoped></style>
+  <Article
+    v-if="$props.articleId === 'table-tennis'"
+    :image-src="TABLE_TENNIS_IMAGE"
+  ></Article>
+</template>
