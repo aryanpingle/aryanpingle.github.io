@@ -52,6 +52,8 @@ onUnmounted(() => {
 :root {
   font-family: "Merriweather", serif;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1;
 
   color-scheme: light dark;
   color: hsl(35, 50%, 13%);
@@ -80,6 +82,10 @@ body {
   width: 100%;
 
   background-image: url(assets/paper-texture.jpg);
+}
+
+img {
+  max-width: 100%;
 }
 
 @media (min-width: 720px) {
@@ -117,22 +123,42 @@ h6 {
   font-weight: 700;
   text-transform: uppercase;
   text-wrap: balance;
-  line-height: 1;
 }
 
 p {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
+}
+
+:not(pre) > code {
+  font-weight: 900;
+  color: black;
+  outline: 1px solid hsl(34, 57%, 50%);
+  background-color: #fdf6e388;
+  padding: 0.2rem 0.2rem;
+}
+
+pre {
+  font-size: 1rem;
+  padding: 1rem;
+  outline: 1px solid hsl(34, 57%, 50%);
+  background-color: #fdf6e388;
 }
 
 h1 {
   text-align: center;
-  line-height: 1.1;
-  margin: 2rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 720px) {
   h1 {
     font-size: 3.2rem;
   }
+}
+
+h2 {
+  font-family: "Merriweather", serif;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 </style>

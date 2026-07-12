@@ -13,7 +13,6 @@ type Props = {
 defineProps<Props>();
 
 const imgStyle = reactive<CSSProperties>({
-  maxWidth: "100%",
   maxHeight: '500px',
   maskImage: `url(${MASK_IMAGE})`,
   maskMode: "luminance",

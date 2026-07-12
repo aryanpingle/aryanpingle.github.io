@@ -77,14 +77,6 @@ const innerSvgPathD = getSaloonOutlinePath({
 
 <!-- Dynamically generated article body -->
 <style>
-.device-sm .article_body {
-  font-size: 0.9rem;
-}
-
-.article_body > p {
-  text-align: justify;
-}
-
 .article_body p:first-of-type:first-letter {
   float: left;
   margin-right: 0.25rem;

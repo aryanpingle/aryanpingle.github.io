@@ -8,23 +8,20 @@ const { data: post } = await useAsyncData(`blog-${slug}`, () =>
 
 <template>
   <ContentRenderer class="article_body2" v-if="post" :value="post" />
-  <!-- TODO: Add info block about me here -->
 </template>
 
 <style>
 /* TODO: VERY BAD CODE, pls refactor */
 
 .article_body2 {
-  max-width: 60ch;
+  max-width: 70ch;
   margin: auto;
-  /* Increase font size for articles specifically */
-  font-size: 1.1rem;
   line-height: 1.5;
 }
 
 .article_body2 > p {
   /* text-align: justify; */
-  margin: 1.3rem 0;
+  /* margin: 1.3rem 0; */
 }
 
 .article_body2 > p:first-of-type:first-letter {
@@ -40,16 +37,7 @@ const { data: post } = await useAsyncData(`blog-${slug}`, () =>
   font-size: 3lh;
 }
 
-/* .article_body2 > p:not(:first-of-type) {
-  text-indent: 2rem;
-}
-
-.device-md .article_body2 > p:not(:first-of-type),
-.device-lg .article_body2 > p:not(:first-of-type) {
-  text-indent: 3rem;
-} */
-
-.article_body2 > p a {
+.article_body2 a {
   font-weight: 900;
   color: currentColor;
   text-decoration: underline;
