@@ -42,7 +42,7 @@ const innerSvgPathD = getSaloonOutlinePath({
     >
       {{ $props.byline }}
     </div>
-    <Image v-if="$props.imageSrc" :src="$props.imageSrc" :caption="$props.imageCaption" />
+    <FadedImage v-if="$props.imageSrc" :src="$props.imageSrc" :caption="$props.imageCaption" />
 
     <template v-if="text">
       <div class="article_body" v-html="parse(text)"></div>
