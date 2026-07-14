@@ -16,11 +16,11 @@ When asked about his thoughts on the recent geopolitical crises, he had this to 
 `;
 
 const ZOMATO_TEXT = `
-It truly seems like there's nothing this man can't do. In one year, Aryan Pingle transformed Zomato's latest venture, [Nugget](https://nugget.com), into a technological marvel. He has made a name for himself as a full-stack developer, transforming their user interface as well as their overall software infrastructure.
+Comparison with Bonaparte is inevitable, as Aryan Pingle's work experience is of modest size yet quite remarkable. He transformed Zomato's latest venture, [Nugget](https://nugget.com), into a technological marvel. He has made a name for himself as a full-stack developer; touching everything from the front-end to the back-end (not an innuendo). From revamping the core user experience on the client-side to working on the overall software infrastructure at Zomato, there seems to be nothing he can't do.
 
-And then he did it again. Sources say senior executives brought him aboard Deepinder Goyal's latest venture (this time, in the art world) to leverage his enormous talent. Despite unconfirmed reports of questionable leadership at [Quiet Art Movement](https://quietart.com), he built up their tech infrastructure to generate several lakhs, starting from nothing.
+And then he did it for a second time. Sources say senior executives brought him aboard Deepinder Goyal's latest venture (this time, in the art world) to leverage his enormous talent. Despite facing several challenges at [Quiet Art Movement](https://quietart.com), he built their software infrastructure from the ground up. He wasn't a part of the tech team — he WAS the tech team.
 
-AND HE GOES FOR A THREEPEAT — Pingle is now back at Zomato, this time in the legendary Web Platform team, being a "cross-functional innovator" in AI-enhanced products. Sources close to him claim, "If he was content with all we could offer him, then he would have ceased to be my best friend" and "Maybe the real engineering was the friends we made along the way".
+And he's now going for a threepeat — Pingle is back at Zomato, this time in the legendary Web Platform team, being a "cross-functional innovator" in AI-enhanced products. He is "leveraging the power of automation" to deliver "key actionable insights". And other such phrases that compel you to [make toast in your bathtub](https://www.youtube.com/watch?v=w3nFWbRSYn8).
 `;
 
 const CONTACT_TEXT = `
