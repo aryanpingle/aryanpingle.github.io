@@ -6,9 +6,14 @@ import XKCD_IMAGE from "~/assets/frontpage/xkcd.png";
 import TABLE_TENNIS_IMAGE from "~/assets/frontpage/table-tennis.png";
 
 const HERO_TEXT = `
-Gongs of the _Gion Shoja_ bells echo the impermanence of all things. The color of the sala flowers reveals the truth that the prosperous must decline. But he is the exception — in this exclusive issue of The Daily Pingle, we explore the psyche of our editor-in-chief, 24 year old Aryan Pingle.
+Gongs of the _Gion Shoja_ bells echo the impermanence of all things. The color of the sala flowers reveals the truth that the prosperous must decline. But he is the exception. In this exclusive issue, we explore the life of billionaire playboy — and owner of **The Daily Pingle** — Aryan Pingle.
 
-While others coward behind platitudes of fake humility, he boldly proclaims himself to be a 'Web Developer Extraordinaire'. But don't be fooled by the sheer magnificence of his aptitude in making stunning websites, for his peers deem him a master of adaptability; he makes container management scripts as skillfully as he prototypes in Figma. A "Jack of all trades" in the truest sense. This charismatic prodigy is the single greatest asset to the fields of Compiler Construction, Meta-programming, and Engineering in general. With the sole exception of Terry Davis, of course.`;
+While others cower behind platitudes of fake humility, 24 year old Pingle is refreshing in his bold proclamation of being 'Web Developer Extraordinaire', with the founding of this paper as his claim to fame. Despite the recent controversy surrounding his alleged fetishization of white-washed North-East Asian women two years older than him, he's more popular than ever — and his charismatic personality has won the hearts of billions around the world.
+
+It is challenging to pinpoint his forte — he is a talented web developer, but an equally skilled programming polyglot. He's not an athlete, but claims to be a top-class runner. He has a boyish charm paired with the face of a heartthrob, yet he is single. But one thing is for certain — he was NOT looking over the shoulder of the editor while this issue of **The Daily Pingle** was being drafted.
+
+When asked about his thoughts on the recent geopolitical crises, he had this to say: "Hey cutie, you look Asian. Are you 26 by any chance?".
+`;
 
 const ZOMATO_TEXT = `
 It truly seems like there's nothing this man can't do. In one year, Aryan Pingle transformed Zomato's latest venture, [Nugget](https://nugget.com), into a technological marvel. He has made a name for himself as a full-stack developer, transforming their user interface as well as their overall software infrastructure.
